@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="layout/layout"
+>
+<!-- index.html 고유 CSS 추가 -->
+<th:block layout:fragment="css">
+</th:block>
+<!-- index.html 고유 스크립트 추가 -->
+<th:block layout:fragment="script">
+
+</th:block>
+
+<div layout:fragment="content">
+
+    <form class="row g-3" method="post">
+
+        <table class="table-primary">
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name="userid"></td>
+            </tr>
+            <tr>
+                <td>PassWord</td>
+                <td><input type="password" name="passowrd"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="email" name="email"> <input type="email"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>addr</td>
+                <td><input type="text" name="addr"></td>
+            </tr>
+        </table>
+
+    </form>
+
+</div>
+</html>
